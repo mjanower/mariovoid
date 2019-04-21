@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF=8">
+  <title>Super Mario VOID</title>
+  <link href="css/styles.css" rel="stylesheet">
+  <link rel="stylesheet.css" rel="font-face">
+
+
+<!--    favicon code-->
+  <style>
+      html, body{
+          height:100%;
+          margin: 0px;
+          padding: 0px;
+          overflow: hidden;
+      }
+      iframe{
+          height:0px;
+      }
+      audio{
+        display:none;
+         position:absolute;
+     }
+      body {
+    text-align:center;
+    background-color: black;
+    text-transform:uppercase;
+    color: white;
+    font-family: myFirstFont;
+    text-decoration:blink;
+    line-height: .3em;
+}
+      h1{
+          font-size: 150px;
+          line-height: 130px;
+          position: relative;
+          margin-left: -3rem;
+          z-index:1;
+      }
+      table{
+          display: inline-block;
+          bottom: 2rem;
+          position: relative;
+      }
+
+      td{
+          padding: 1rem;
+          padding-left: 1.5rem;
+          padding-right: 1.5rem;
+          border: 1px white solid;
+      }
+      .button{
+          position: relative;
+          margin-bottom: 6rem;
+          padding: 1rem;
+          padding-left: 1.5rem;
+          padding-right: 2rem;
+          border: 1px white solid;
+          display: inline-block;
+      }
+      .sticker{
+          position:absolute;
+          margin-left: 9rem;
+          margin-top: 10rem;
+          padding-bottom: 0px;
+          margin-bottom: 0px;
+          z-index:2;
+      }
+      @font-face{
+        font-family: myFirstFont;
+        src: url(/assets/Pixel_Emulator.woff);
+          }
+
+/*blinking text code */
+      .blink {
+	-webkit-animation: blink .75s linear infinite;
+	-moz-animation: blink .75s linear infinite;
+	-ms-animation: blink .75s linear infinite;
+	-o-animation: blink .75s linear infinite;
+	 animation: blink .75s linear infinite;
+}
+@-webkit-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-moz-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-ms-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-o-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+/* @end */
+  </style>
+
+</head>
+
+<body>
+    <iframe src="/assets/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+    <audio controls autoplay>
+    <source autoplay loop src="/assets/SMV.mp3" type="audio/mpeg" style="display:none"/></audio>
+    <img class=sticker src="/assets/meaningless.png" height="200">
+   <h1>Game<br>over</h1>
+
+     <div class=button><p class="tab blink"> Press Enter to Restart</p></div>
+
+    <footer>
+     <table><tr>
+     <td>Coins: 0</td>
+     <td>Lives: 1</td>
+     <td>World: 1-1</td>
+ </tr></table>
+    </footer>
+</body>
+<script>
+document.addEventListener('keydown', function(event) {
+  if (event.code == 'Enter') {
+    window.location.href = 'index.html';
+  }
+});
+// addEventListener("click", function() {
+//     var
+//           el = document.documentElement
+//         , rfs =
+//                el.requestFullScreen
+//             || el.webkitRequestFullScreen
+//             || el.mozRequestFullScreen
+//     ;
+//     rfs.call(el);
+// });
+</script>
+</html>

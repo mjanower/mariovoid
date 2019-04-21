@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" width=devide-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+    <style> body {padding: 0; margin: 0;} </style>
+    <!-- <script src="p5.min.js"></script>
+    <script src="addons/p5.dom.min.js"></script>
+    <script src="addons/p5.sound.min.js"></script>
+    <script src="sketch.js"></script> -->
+    <title>Super Mario VOID—About</title>
+  <link rel="stylesheet.css" rel="font-face">
+
+        <style>
+            audio{
+              display:none;
+              position:absolute;
+           }
+            html, body{
+              width:  100%;
+              height: 100%;
+              margin: 0;
+              overflow:hidden;
+            }
+            table{
+              display: inline-block;
+              margin-top:1rem;
+              position: absolute;
+            }
+            td{
+                padding: .8rem;
+                padding-left: 1.5rem;
+                padding-right: 1.5rem;
+                border: 1px white solid;
+            }
+            .button{
+              bottom: 3rem;
+              position:fixed;
+              display: inline-block;
+              padding: 1rem;
+              padding-left: 1.5rem;
+              padding-right: 2rem;
+              margin-left: -24rem;
+              border: 1px white solid;
+            }
+            body {
+              text-align:center;
+              background-color: black;
+              text-transform:uppercase;
+              color: white;
+              font-family: myFirstFont;
+              text-decoration:blink;
+              line-height: .5em;
+      }
+            p{
+              line-height: 1.6em;
+            }
+            a{
+              text-decoration:none;
+            }
+            .about{
+                text-align:left;
+                margin: 1rem;
+                padding: 1rem;
+                display: inline-block;
+                padding-left: 1.5rem;
+                padding-right: 2rem;
+                padding-bottom: 5rem;
+                margin-bottom:1rem;
+                border: 1px white solid;
+            }
+            .sticker{
+                position:absolute;
+                margin-left: 15rem;
+                margin-top: 2rem;
+                padding-bottom:30rem;
+            }
+            #displayDiv{
+              margin: 5rem;
+              position:fixed;
+            }
+            .sticker{
+                position:absolute;
+                margin-left: 21rem;
+                margin-top: -9rem;
+                padding-bottom:30rem;
+            }
+            @font-face{
+              font-family: myFirstFont;
+              src: url(/assets/Pixel_Emulator.woff);
+                }
+
+      /*blinking text code */
+            .blink {
+      	-webkit-animation: blink .75s linear infinite;
+      	-moz-animation: blink .75s linear infinite;
+      	-ms-animation: blink .75s linear infinite;
+      	-o-animation: blink .75s linear infinite;
+      	 animation: blink .75s linear infinite;
+      }
+      @-webkit-keyframes blink {
+      	0% { opacity: 1; }
+      	50% { opacity: 1; }
+      	50.01% { opacity: 0; }
+      	100% { opacity: 0; }
+      }
+      @-moz-keyframes blink {
+      	0% { opacity: 1; }
+      	50% { opacity: 1; }
+      	50.01% { opacity: 0; }
+      	100% { opacity: 0; }
+      }
+      @-ms-keyframes blink {
+      	0% { opacity: 1; }
+      	50% { opacity: 1; }
+      	50.01% { opacity: 0; }
+      	100% { opacity: 0; }
+      }
+      @-o-keyframes blink {
+      	0% { opacity: 1; }
+      	50% { opacity: 1; }
+      	50.01% { opacity: 0; }
+      	100% { opacity: 0; }
+      }
+      @keyframes blink {
+      	0% { opacity: 1; }
+      	50% { opacity: 1; }
+      	50.01% { opacity: 0; }
+      	100% { opacity: 0; }
+      }
+      /* @end */
+        </style>
+  </head>
+  <body>
+    <div id="everything">
+        <header>
+          <img src="/assets/lockup.png" alt="Super Mario VOID" height="250" width="auto">
+        </header>
+        <div class=about>
+          <img class="sticker" src="/assets/maker2.png" alt="maker" height="200" width="auto">
+        <p>About Mikki:</p>
+        <p>Mikki Janower is a designer, writer <br>and troublemaker currently living <br>in New York City.</p><br>
+        <table id=options><tr>
+        <td><a class="btn btn-success" href="http://mikkijanower.work" target="_blank" style="color:white">Website</a></td>
+        <td><a class="btn btn-success" href="http://instagram.com/chaoticneue" target="_blank" style="color:white">Instagram</a></td>
+        <td><a class="btn btn-success" href="mailto:mikki@janower.net?Subject=I%20love%20your%20work!" target="_top" style="color:white">Contact</a></td>
+       </tr></table>
+      </div>
+       <a class=button a href=index.html style="color:white"><p class="tab blink">  back to homepage </p></a>
+  </body>
+  <script>
