@@ -241,12 +241,6 @@
         <div id="displayDiv"></div>
         <div>
           <div id='loader'><p>Void self-actualizing...</p></div>
-         <script>
-    $(window).on('load',function() {
-      $('#loader').fadeOut( "slow", function() {
-    });
-});
-  </script>	
         <footer>
          <table id='stats'><tr>
          <td>Coins: 0</td>
@@ -259,5 +253,11 @@
   <iframe src="assets/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
   <audio controls autoplay>
   <source autoplay loop src="assets/SMV.mp3" type="audio/mpeg" style="display:none"/></audio>
+         <script>
+    $(window).on('load',function() {
+      $('#loader').fadeOut( "slow", function() {
+    });
+});
+  </script>	
   </body>
 </html>
