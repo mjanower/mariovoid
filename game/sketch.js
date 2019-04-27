@@ -182,7 +182,7 @@ function loadGO() {
 }
 
 function ct() {
-    document.getElementById("displayDiv").innerHTML = "Time Remaining: " + i;
+    document.getElementById("displayDiv").innerHTML = "Time: 00." + i;
     if (i === 0) {
         clearInterval(myInterval);
         //call your function
