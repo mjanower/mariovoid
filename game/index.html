@@ -11,18 +11,6 @@
     <title>Super Mario VOID</title>
   <link rel="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet.css" rel="font-face">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    	<script src="https://github.com/Modernizr/Modernizr/raw/master/modernizr.js"></script>
-	<script>
-		// Wait for window load
-		$(window).load(function() {
-			// Animate loader off screen
-			$("#loader").animate({
-				top: 5%
-			}, 1500);
-		});
-      </script>
-
         <style>
             audio{
               display:none;
@@ -129,30 +117,6 @@
               font-family: myFirstFont;
               src: url(assets/Pixel_Emulator.woff);
                 }
-         #loader{
-            position:fixed;
-            height:100%;
-            width:100%;
-            overflow:hidden;
-            top:0;
-            left:0;
-            background-color:black;
-            z-index:20;
-        }
-        #loader p{
-            margin-left:5%;
-            margin-top:5%;
-            text-decoration:blink;
-            overflow:hidden;
-        }
-        .no-js #loader { display: none;  }
-        .js #loader { display: block; position: absolute; left: 100px; top: 0; }
-          /*timer*/
-              #countdown{
-                display:inline-block;
-                position:fixed;
-                top:2rem;
-              }
       /*blinking text code */
             .blink {
       	-webkit-animation: blink .75s linear infinite;
@@ -240,7 +204,6 @@
         </div>
         <div id="displayDiv"></div>
         <div>
-          <div id='loader'><p>Void self-actualizing...</p></div>
         <footer>
          <table id='stats'><tr>
          <td>Coins: 0</td>
@@ -252,12 +215,6 @@
   </div>
   <iframe src="assets/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
   <audio controls autoplay>
-  <source autoplay loop src="assets/SMV.mp3" type="audio/mpeg" style="display:none"/></audio>
-         <script>
-    $(window).on('load',function() {
-      $('#loader').fadeOut( "slow", function() {
-    });
-});
-  </script>	
+  <source autoplay loop src="assets/SMV.mp3" type="audio/mpeg" style="display:none"/></audio>	
   </body>
 </html>
