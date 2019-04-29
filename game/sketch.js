@@ -53,6 +53,7 @@ function draw() {
 
       scale(1,1);
     }
+    
     if (facingRight == false) {
       scale(-1,1);
       translate(-width+(player[0].width),0);
