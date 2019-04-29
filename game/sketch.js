@@ -21,7 +21,6 @@ function preload(){
   spriteSheet = loadImage('assets/mario.png');
   spriteSheet2 = loadImage('assets/bowser.png');
   myFont = loadFont('assets/Pixel_Emulator.woff');
-  loader= document.getElementById("loader");
 }
 
 function setup() {
@@ -49,11 +48,6 @@ function draw() {
   if (started) {
     background(0);
     // put drawing code here
-    $(window).load(function() {
-        // Animate loader off screen
-        $("#loader").animate({
-          top: 5%
-      }
 
     if (facingRight == true) {
 
@@ -98,10 +92,6 @@ function draw() {
       mV = 0;
     }
   }
-  $(window).on('load',function() {
-  $('#loader').fadeOut( "slow", function() {
-});
-});
 }
 }
 
