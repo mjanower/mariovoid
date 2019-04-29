@@ -1,6 +1,5 @@
 var spriteSheet;
 var spriteSheet2;
-var loader;
 var mario = [];
 var bowser =[];
 var running;
@@ -44,7 +43,6 @@ function setup() {
 }
 
 function draw() {
-
   if (started) {
     background(0);
     // put drawing code here
@@ -53,7 +51,6 @@ function draw() {
 
       scale(1,1);
     }
-    
     if (facingRight == false) {
       scale(-1,1);
       translate(-width+(player[0].width),0);
