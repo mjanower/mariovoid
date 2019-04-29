@@ -53,7 +53,7 @@ function draw() {
         // Animate loader off screen
         $("#loader").animate({
           top: 5%
-       1500);  }
+      }
 
     if (facingRight == true) {
 
