@@ -1,5 +1,6 @@
 var spriteSheet;
 var spriteSheet2;
+var loader;
 var mario = [];
 var bowser =[];
 var running;
@@ -20,6 +21,7 @@ function preload(){
   spriteSheet = loadImage('assets/mario.png');
   spriteSheet2 = loadImage('assets/bowser.png');
   myFont = loadFont('assets/Pixel_Emulator.woff');
+  loader= document.getElementById("loader");
 }
 
 function setup() {
@@ -43,9 +45,15 @@ function setup() {
 }
 
 function draw() {
+
   if (started) {
     background(0);
     // put drawing code here
+    $(window).load(function() {
+        // Animate loader off screen
+        $("#loader").animate({
+          top: 5%
+        }, 1500);
 
     if (facingRight == true) {
 
@@ -90,6 +98,10 @@ function draw() {
       mV = 0;
     }
   }
+  $(window).on('load',function() {
+  $('#loader').fadeOut( "slow", function() {
+});
+});
 }
 }
 
@@ -161,7 +173,6 @@ function keyPressed() {
       setInterval(loadGO, 30*1000);
       setInterval(ct, 1000);
     }
-
   }
 }
 
@@ -182,7 +193,7 @@ function loadGO() {
 }
 
 function ct() {
-    document.getElementById("displayDiv").innerHTML = "Time: 00." + i;
+    document.getElementById("displayDiv").innerHTML = "Time Remaining: " + i;
     if (i === 0) {
         clearInterval(myInterval);
         //call your function
