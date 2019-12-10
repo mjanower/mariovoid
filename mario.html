@@ -1,0 +1,158 @@
+<head>
+<meta name="viewport" width="devide-width," initial-scale="1.0," maximum-scale="1.0," user-scalable="0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+
+<link rel="stylesheet" href="mariostyle.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+<script src="marioscript.js"defer></script>
+</head> 
+
+<body>
+    <br>
+         <table>
+            <tbody><tr>
+            <td class="button"> 
+                <a href="https://mikkijanower.work" id="btn">Back</a>
+            </td>
+                </tr>
+        </tbody></table>
+<div id="back"><a href="http://mikkijanower.work">Back</a>
+</div>
+<iframe id="game" src="https://mjanower.github.io/mariovoid/game/index.html" autofocus="autofocus"></iframe>
+
+<div id="narrow">
+<img src="https://files.cargocollective.com/c186171/lockupcopy.png"> 
+<br>
+<p>Yikes! Turns out the void is vaster then the scope of your browser. Try enlarging your browser or making it fullscreen.</p>
+</div>
+<div id="mobile">
+<img src="https://files.cargocollective.com/c186171/lockupcopy.png"> 
+<br>
+<p>Yikes! Super Mario Void doesn't work with mobile browsers just yet. In the meantime, enjoy this blank space. Maybe it's a metaphor for something?
+</p></div>
+</body>
+<style>
+ 	 @font-face{
+              font-family: myFirstFont;
+              src: url(https://files.cargocollective.com/c186171/Pixel_Emulator.woff);
+                }
+	body{
+        font-family:myFirstFont;
+		background: black;
+        color:white;
+        margin-top:0rem;
+        overflow:hidden;
+	}
+    #back{
+        position:absolute;
+        margin:2em;
+        padding:.7em;
+        border:1px solid white;
+        border-radius:1em;
+    }
+    a{
+        color:white;
+        text-decoration:none;
+    }
+    #game{
+    top:2vh;
+    left:0;
+    z-index:1000;
+    width:80%;
+    height:100vh;
+    border: 1px solid black;
+    text-align:center;
+    display:inline-block;
+    position:absolute;
+    margin-bottom:5rem;
+    margin-left:12%;
+    -ms-transform: scale(0.96);
+    -moz-transform: scale(0.96);
+    -o-transform: scale(0.96);
+    -webkit-transform: scale(0.96);
+    transform: scale(0.96);
+
+    -ms-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    }
+    table{
+    margin-left:2.5rem;
+    margin-bottom:1rem;
+    margin-top:-5rem;
+    }
+    tr{
+    z-index:1000;
+    }
+    td {
+            color:white;
+            size: 1.5rem;
+            background-color:black;
+            text-decoration:none;
+            border-radius:20px;
+            border: 1px solid white;
+            padding: .5rem;
+            padding-left: 1rem;
+            padding-right:1.2rem;
+            margin-right:1.5rem;
+            position:sticky;
+        }
+      td:hover{
+            border:1px solid white;
+            background: blue;
+  		}
+        #mobile{
+         display:none;
+         width:75vw; 
+         height:100vh;
+         margin-top: 15vh;
+         text-align:center;
+         display:inline-block;
+         position:relative;
+         margin-left:12.5vw;
+         font-family:myFirstFont;
+         font-size:1.2rem;
+        }
+        #mobile img{
+         width:75vw;
+         height:auto;
+        }
+         #narrow{
+         display:none;
+         width:60vw; 
+         height:100vh;
+         margin-top: 7vh;
+         text-align:center;
+         display:inline-block;
+         position:relative;
+         margin-left:20vw;
+         font-family:myFirstFont;
+         font-size:1.6rem;
+        }
+        #narrow img{
+         width:60vw;
+         height:auto;
+        }
+     @media only screen and (max-width:1080px) and (min-width:500px){
+        #game {
+          display:none;
+  		}
+  		#narrow{
+          display:all;
+        }
+        }
+    @media only screen and (max-width:500px) and (min-width: 320px){
+     #game {
+          display:none;
+  		}
+      #narrow{
+        display:none;
+		}
+  		#mobile{
+          display:all;
+        }
+        }
+</style>
